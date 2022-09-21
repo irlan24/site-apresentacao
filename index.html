@@ -49,15 +49,21 @@
             </div>
         
 
-            <div class="animation">
-                <div id="img-frente">
+            <div id="animation" class="flip">
+                <div id="img-frente" class="lados" >
                     <img src="imagens/perfil.jpg" alt="perfil">
                 </div>
 
-                <div id="img-verso">
+                <div id="img-verso" class="lados">
                     <img src="imagens/perfil-2.jpg" alt="perfil-2">
                 </div>
+
                 
+                
+            </div>
+
+            <div class="instrucao"> <!--Fazer essa div ficar abaixo da imagem-->
+                    asd
             </div>
         </div>
                            
@@ -95,6 +101,12 @@
 
         </div>
         -->
+        <script>
+            let card = document.querySelector("#animation")
+        card.addEventListener("click", ()=>{
+            card.classList.toggle("flip")
+        })
+        </script>
 
         
 

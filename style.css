@@ -82,12 +82,10 @@ a:hover{
     justify-content: space-around;
     align-items: center; 
     width: 800px; 
-     
-                 
+    height: 400px;
+    
+                      
 }
-
-
-
 
 #perfil{
     
@@ -100,37 +98,67 @@ a:hover{
                 
 }
 
-/* config ambas as partes (front-back) */
-.animation{    
+/* configuração das imagens de perfil */
+
+#animation{    
     display: inline-block;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 20px;     
+    padding: 20px; 
+    transform-style: preserve-3d;
+    transition: 0.9s;  
+    
+      
+}
+#animation:hover{
+    cursor: pointer;
 }
 /* config parte da frente */
-#img-frente{
+.lados{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 200px;
-    width: 200px;
-}
-
-#img-frente img{
+    width: 00px;
+    position: absolute;
     border-radius: 50%;
     border: 3px solid #ad9106ab;
 }
 
-/* config parte da verso */
-#img-verso{
+
+
+
+#img-verso{   
+    backface-visibility: hidden; 
+    
+    
+    
+}
+#img-frente img{
+    border-radius: 50%;
+    border: 3px solid #ad9106ab;
     display: flex;
-    height: 200px;
-    width: 200px;
+    width: 300px;
     
 }
 #img-verso img{
     border-radius: 50%;
     border: 3px solid #ad9106ab;
+    transform: rotateY(180deg);
+    display: flex;
+    width: 300px;
+    
     
 }
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
 
 .sobre{
     font-family: Arial, Helvetica, sans-serif;
