@@ -8,7 +8,7 @@
 
 *{
     padding: 0px;
-    margin: 3px 5px;
+    margin: 0px;
     scroll-behavior: smooth;
 }
 section{
@@ -81,8 +81,9 @@ a:hover{
     display: flex; 
     justify-content: space-around;
     align-items: center; 
-    width: 800px; 
-    height: 400px;
+    width: 1024px; 
+    height: 500px;
+    position: absolute;
     
                       
 }
@@ -97,14 +98,21 @@ a:hover{
     
                 
 }
+#perfil span{    
+    font-size: 30px;
+    display: inline;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);
+    font-family: 'Rampart One', cursive;       
+                   
+}
 
 /* configuração das imagens de perfil */
 
 #animation{    
-    display: inline-block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px; 
+    padding: 0px 50px; 
     transform-style: preserve-3d;
     transition: 0.9s;  
     
@@ -155,38 +163,27 @@ a:hover{
     transform: rotateY(180deg);
 }
 
-
-
-
-
-
-.sobre{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    width: 550px;
-    height: 500px;
+.instrucao{
+    display: inline-block;
+    justify-content: center;
+    align-items: flex-end;    
+    font-size: 30px;  
+    left: 270px;  
+    top: 190px;
     position: relative;
-    left: 70px;
-    
-    margin: left auto;
-    
-    
-    
-    
-    
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);
+    font-family: 'Rampart One', cursive;
 
-    
+
 }
 
 
-.sobre h1{
-    text-shadow: 2px 2px 1px black;
-    padding: 60px 0px;
-    font-size: 17pt;
-}
 
 
-/*
+
+
+
+
 
 @keyframes animacao {        
     0%{transform: translateY(0px);}
@@ -195,21 +192,13 @@ a:hover{
 }
 #perfil{    
     
-    animation: animacao 2s linear infinite; /* Chamar a função nomeada no keyframes, tempo para concluir animação, tipo constante, modalidade infinita de rotação 
+    animation: animacao 2s linear infinite; /* Chamar a função nomeada no keyframes, tempo para concluir animação, tipo constante, modalidade infinita de rotação */
     
 
-} */
-
-
-#perfil span{
-    
-    font-size: 30px;
-    display: inline;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);
-    font-family: 'Rampart One', cursive; 
-      
-                   
 }
+
+
+
 
 
 
