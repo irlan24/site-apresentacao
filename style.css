@@ -15,7 +15,7 @@ section{
     display: flex; 
     justify-content: center;       
     align-items: center;
-    padding: 50px;    
+    margin: auto;    
     background-image: linear-gradient(to left, #1C0051, #1F2BCD);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -58,10 +58,7 @@ a:hover{
 
 
 #menu{
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block; 
-    justify-content: space-around;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;    
     position: fixed;   
     padding: 20px;
     background-color: #ad9106;
@@ -70,7 +67,14 @@ a:hover{
     font-size: 10px;
     border-radius: 5px;
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.753);
-    
+
+}
+
+#topicos-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
 
 }
 
@@ -80,19 +84,16 @@ a:hover{
 .container{         
     display: flex; 
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
+     
     width: 1024px; 
     height: 500px;
-    position: absolute;
+    padding: 30px 0px;
     
                       
 }
 
-#perfil{
-    
-    display: inline-block;
-    justify-content: flex-start;
-    align-items: center;    
+#perfil{   
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;  
     
@@ -106,12 +107,9 @@ a:hover{
                    
 }
 
-/* configuração das imagens de perfil */
+/* configuração gerais das imagens de perfil */
 
 #animation{    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 0px 50px; 
     transform-style: preserve-3d;
     transition: 0.9s;  
@@ -121,58 +119,51 @@ a:hover{
 #animation:hover{
     cursor: pointer;
 }
-/* config parte da frente */
-.lados{
+
+
+.lados{     /* config de ambas as imagens */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
-    width: 00px;
+    width: 0px;
     position: absolute;
     border-radius: 50%;
     border: 3px solid #ad9106ab;
 }
 
-
-
-
-#img-verso{   
+#img-verso{   /* fazer img funcionar como 3d */
     backface-visibility: hidden; 
-    
-    
-    
 }
-#img-frente img{
+
+#img-frente img{    /* img da inicial */
     border-radius: 50%;
     border: 3px solid #ad9106ab;
-    display: flex;
     width: 300px;
     
 }
-#img-verso img{
+#img-verso img{     /* img da secundária */
     border-radius: 50%;
     border: 3px solid #ad9106ab;
     transform: rotateY(180deg);
-    display: flex;
     width: 300px;
     
-    
 }
 
-.flip{
+.flip{    /* alternar img pelo JS.toggle */
     transform: rotateY(180deg);
 }
-
-.instrucao{
-    display: inline-block;
+.position-animation{    /* alinhamento das imgs */
+    display: flex;
     justify-content: center;
-    align-items: flex-end;    
-    font-size: 30px;  
-    left: 270px;  
-    top: 190px;
-    position: relative;
+    align-items: center;
+}
+
+.instrucao{     /* orientação para executar animação das imgs */
+    font-size: 30px; 
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);
     font-family: 'Rampart One', cursive;
+    
 
 
 }
